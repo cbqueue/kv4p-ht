@@ -26,7 +26,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install PlatformIO
-        run: pip install -U platformio
+        run: pip install -U platformio==6.1.18
 
       - name: Build project
         run: pio run -v -e esp32dev -e esp32dev-release
