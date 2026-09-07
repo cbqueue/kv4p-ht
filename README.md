@@ -8,7 +8,7 @@ Please see the main project site: https://kv4p.com
 
 The site above is for installing a public release. Compiling this repo yourself means building **both** the ESP32 firmware and the Android app from the same git revision.
 
-The version mismatch check is not active until a public release. If you only rebuild the Android app and leave old firmware on the radio, they will still connect. Flash matching firmware whenever you change firmware or the protocol.
+The firmware resource bundled in the Android app is from the last public release and is not updated until the next one. In a source build there is also no firmware compatibility check, so the app and radio will still connect even if they are out of sync. Flash the firmware and build the Android app from the same commit.
 
 ### Clone
 
